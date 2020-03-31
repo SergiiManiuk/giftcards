@@ -1,0 +1,88 @@
+@import '../base/vars';
+@import '../base/media';
+@import '../base/mixins';
+
+.progress-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 40px 0;
+    color: #666;
+    @include desktop_max_height {
+      margin: 0 0 30px 0;
+    }    
+    @include _700_max {
+      grid-gap: 5px;
+      margin: 0 0 20px 0;
+    }
+    &__step {
+      display: grid;
+      grid-row-gap: 6px;
+      align-content: flex-end;
+      &_slogan {
+        text-align: center;
+        font-size: 12px;
+        padding: 0 0 0 10px;
+        @include desktop_max_height {
+          padding: 0 0 0 15px;
+        }
+        @include _700_max {
+          padding: 0;
+        }
+      }
+    &_filling {
+      background: #DFDFDF;
+      height: 9px;
+      border-radius: 10px;
+      position: relative;
+      &::before,
+      &::after {
+        content: '';
+        display: block;  
+        position: absolute;      
+        border-radius: 10px;
+        width: 30px;
+        height: 9px;
+        top: 0;
+        @include _700_max {
+          display: none;
+        }
+      }
+      &::before {
+        background: #ffffff;
+        left: -20px;
+      };
+      &::after {
+        content: '';
+        background: #DFDFDF;
+        right: -5px;
+        z-index: 1;
+      };
+    }
+    &:first-child {
+      .progress-bar__step_filling {
+        margin: 0 0 0 2px;
+        &::before {
+          width: 0;
+        }
+      }
+    }
+    &:last-child {
+      .progress-bar__step_filling {
+        &::after {
+         display: none;  
+        }
+      }
+    }
+    &.active {
+      .progress-bar__step_slogan {
+        color: #E95D2A;
+      }
+      .progress-bar__step_filling {
+        background-color: #E95D2A;
+        &::after {
+          background-color: #E95D2A;      
+        }
+      }
+    }
+  }
+}

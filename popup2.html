@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>giftcards</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1">
+    <link href="./dist/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="popup-overlay">
+    <div class="popup">
+        <div class="popup__head">
+            <p>Подарочный сертификат Фокстрот</p>
+            <i class="btn-close"></i>
+        </div>
+        <div class="popup__content">
+            <div class="progress-bar">
+                <div class="progress-bar__step active">
+                    <div class="progress-bar__step_slogan">Доставка и номинал</div>
+                    <div class="progress-bar__step_filling"></div>
+                </div>
+                <div class="progress-bar__step">
+                    <div class="progress-bar__step_slogan">Контактная информация</div>
+                    <div class="progress-bar__step_filling"></div>
+                </div>
+                <div class="progress-bar__step">
+                    <div class="progress-bar__step_slogan">Выбор открытки</div>
+                    <div class="progress-bar__step_filling"></div>
+                </div>
+                <div class="progress-bar__step">
+                    <div class="progress-bar__step_slogan">Оплата</div>
+                    <div class="progress-bar__step_filling"></div>
+                </div>
+            </div>
+            <div class="popup__info">
+                <p class="popup__info_slogan">Укажите удобный для Вас способ доставки, а также выберите номинал и количество сертификатов</p>
+                    <h2>Выбери способ доставки</h2>                
+                <div class="delivery-methods">
+                    <div class="delivery-methods__block">
+                        <div class="delivery-methods__list">
+                            <div class="form-radio">
+                                 <input class="delivery-input" type="radio" id="delivery-1" name="DeliveryType" value="1" checked>
+                                <label for="delivery-1">
+                                   Самовывоз (Киев, Воздвиженская 42)
+                                </label>
+                            </div>
+                            <div class="form-radio">
+                                 <input class="delivery-input" type="radio" id="delivery-2" name="DeliveryType" value="1">
+                                <label for="delivery-2">
+                                    Новая Почта (Адрес)
+                                </label>
+                            </div>
+                            <div class="form-radio">
+                                 <input class="delivery-input" type="radio" id="delivery-3" name="DeliveryType" value="1">
+                                <label for="delivery-3">
+                                    Новая Почта (Отделение)
+                                </label>
+                            </div>
+                            <div class="form-radio">
+                                 <input class="delivery-input" type="radio" id="delivery-4" name="DeliveryType" value="1">
+                                <label for="delivery-4">
+                                   Email
+                                </label>
+                            </div>
+                        </div>
+                        <div class="delivery-methods_foxes-img">
+                            <img src="src/img/popup-2-foxes.jpg" alt="method foxes">
+                        </div>
+                    </div>
+                </div>
+                <h3>Укажите номинал и количество сертификатов</h3>
+                <div class="form">
+                    <form action="/">
+                        <div class="row row-2 row-2-fixed">
+                            <div class="col">
+                                <select name="" id="">
+                                    <option value="" disabled selected>Номинал</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="text" placeholder="Количество сертификатов">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>             
+            </div>           
+        </div>
+        <div class="popup__footer">
+            <div class="container-buttons container-button-one">
+                <a href="/" class="btn">ВПеред</a>
+            </div>
+            <div class="copyright">
+                Продаж здійснює ТОВ «Гіфт Кард Мол» Тел.: 044 599 38 10, 067 468 10 90 Email: info@giftmall.com.ua
+            </div>
+        </div> 
+    </div>
+
+  </div>
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="./dist/js/app.min.js"></script>
+</body>
+</html>

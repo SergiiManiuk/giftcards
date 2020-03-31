@@ -1,0 +1,50 @@
+.subscribe {
+  background: #F9F9F9;
+  background: url("../../src/img/bg-wave-subscribe.svg") center right / contain no-repeat #F9F9F9;
+  box-shadow: 0px 1px 0px #EAEAEA, 0px -1px 0px #EAEAEA;
+  padding: 2em 0 3em;
+  @include _1100_min {
+   padding: 4em 0;   
+  }
+}
+
+.wrap-subscribe {
+  display: grid;
+  align-items: center;
+  grid-gap: 2em;
+  @include _1100_min {
+    grid-template-columns: 1fr auto;
+    grid-gap: 5em;
+  }
+  .heading {
+    flex-wrap: nowrap;
+    &::before {
+      background-size: contain;
+      height: 2.21em;
+      width: 2.21em;
+      @include _1100_max {
+        margin-left: auto;
+      }
+    }
+    @include _1100_max {
+      text-align: center;
+    }
+  }
+  &__slogan {
+
+  }
+  &__submit {
+    @include _769_min {
+      justify-self: center;
+    }
+    @include _1100_min {
+      justify-self: flex-end;
+    }
+    .btn {
+      @include _769_max {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

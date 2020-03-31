@@ -1,0 +1,53 @@
+@import '../base/vars';
+@import '../base/media';
+@import '../base/mixins';
+
+.popup-1 {
+    max-width: 630px;
+
+    .container-buttons {
+        padding: 50px 0;
+        margin: 0;
+
+        @include desktop_max_height {
+            padding: 30px 0;
+        }
+    }
+
+    &__content {
+        padding: 60px 60px 30px;
+    }
+}
+
+.slogan-choose {
+    margin: 45px 0 0;
+    font-size: 18px;
+
+    @include desktop_max_height {
+        margin: 25px 0 0;
+        font-size: 17px;
+    }
+    @include _860_max {
+      margin: 10px 0 0;
+      font-size: 15px;
+      .icon {
+        transform: scale(0.9);
+      }
+    }
+
+    li {
+ 
+        align-items: center;
+        display: grid;
+          grid-template-columns: 60px 1fr;
+          &:not(:last-child) {
+            margin-bottom: 40px;
+            @include desktop_max_height {
+              margin: 0 0 30px 0;
+            }
+            @include _640_max {
+              margin: 0 0 20px 0;
+            }
+        }
+    }
+}

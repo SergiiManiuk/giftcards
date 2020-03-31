@@ -1,0 +1,49 @@
+@import 'base/_normalize.scss';
+@import 'base/fonts';
+@import 'base/reset';
+
+@import 'base/vars'; 
+@import 'base/mixins';
+@import 'base/media';
+@import 'base/typography';
+
+ @import 'partials/slick';
+ @import 'partials/slick-theme';
+ @import 'partials/datepicker';
+ @import 'partials/select2';
+ @import 'partials/select2-theme';
+
+@import 'popups/_progress-bar';
+@import 'popups/_form';
+@import 'popups/_buttons';
+@import 'popups/_popup-gallery';
+@import 'popups/_popup';
+@import 'popups/_popup_1';
+
+@import 'popups/_popup_carousel';
+
+// @import 'components/header';
+// @import 'components/breadcrumbs';
+// @import 'components/layout.scss';
+// @import 'components/body';
+// @import 'components/footer';
+// @import 'components/news';
+
+
+
+// @import 'modules/carousel';
+// @import 'modules/carousel_index_banner';
+// @import 'modules/carousel_brand';
+// @import 'modules/filter';
+// @import 'modules/article';
+// @import 'modules/report_tabs';
+// @import 'modules/menu_sidebar';
+// @import 'modules/paginations';
+// @import 'modules/subscribe';
+// @import 'modules/contacts';
+// @import 'modules/seo';
+
+
+
+
+@import 'layouts/layout';

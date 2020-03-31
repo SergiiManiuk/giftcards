@@ -1,0 +1,15 @@
+@import '../base/vars';
+@import '../base/media';
+@import '../base/mixins';
+
+body {
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+body {
+  @include header_breakpoint(max) {
+    padding: 50px 0 0 0;
+  }
+}

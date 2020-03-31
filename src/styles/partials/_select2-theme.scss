@@ -1,0 +1,41 @@
+@import '../base/vars';
+@import '../base/media';
+@import '../base/mixins';
+
+.select2-container {
+  &--default {
+    .select2-selection {
+      &--single {
+        @include inputs;
+        .select2-selection__rendered {
+          padding: 0;
+          line-height: 22px;
+              color: rgba(12, 6, 26, 0.8);
+        }
+        .select2-selection__arrow {
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          b {
+            border-color: #E95D2A transparent transparent transparent;            
+          }
+        }
+      }
+    }
+  }
+}
+
+.select2 {
+  &-results {
+    &__option {
+          padding: 5px 23px;
+    }
+  }
+  &-dropdown {
+        border: none;
+    background-color: #fff;
+    box-shadow: 0 0 6px 2px rgba(204,204,204,.5);
+  }
+}
+
+

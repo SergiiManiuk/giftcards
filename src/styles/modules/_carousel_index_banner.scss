@@ -1,0 +1,54 @@
+@import '../base/vars';
+@import '../base/media';
+@import '../base/mixins';
+
+.index-banner {
+  .owl-item {
+    img {
+      max-width: 100%
+    }
+  }
+  @include _1500_max {
+    font-size: 14px;
+  }
+  @include _1200_max {
+    font-size: 12px;
+  }
+  @include _860_max {
+    font-size: 11px;
+  }
+  .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.index-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: 40%;
+}
+
+.index-banner-slogan {
+  font-weight: 600;
+  @include font-size(52px);
+  line-height: 1.2em;
+  color: #3F3F3F;
+  margin: 0 0 0.3em 0;
+}
+
+.index-banner-description {
+  color: #656B6F;
+  @include font-size(21px);
+  margin: 0 0 1.6em 0;  
+}
+
+.index-banner-link {
+  background:  url("../svg/sprite.svg#banner_arrow") no-repeat center / cover;
+  display: inline-block;
+  width: 5.625em;
+  height: 2em;
+}

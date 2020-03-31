@@ -1,0 +1,185 @@
+@import '../base/vars';
+@import '../base/media';
+@import '../base/mixins';
+
+//colors
+$orange: #E95D2A;
+$orange-dark: #D5410B;
+$black: #000000;
+$violet: #825DC7;
+$violet-dark: #6E47B7;
+$white: #FFFFFF;
+$yellow: #F3E500;
+$blue: #92C1E9;
+$grey: #BEBEBE;
+$almstbick: #0C061A;
+$almstbick-light: #2A292E;
+$light-grey: #F2F2F2;
+$drk-grey: #666666;
+$bg-color: #f2f3f6;
+$green: #27AE60;
+
+$col-mb: 80px;
+$col-border-radius: 20px;
+$col-border-radius-sm: 4px;
+
+$mb-wrap-padding: 15px;
+$main-wrap: 1440px;
+
+
+.form {
+    margin: 0 0 25px 0;
+    @include _640_max {
+        margin: 0 0 15px 0;
+    }
+    &__legend {
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0 0 15px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__row {
+        &_block {
+            margin: 0 0 15px 0;
+            @include _640_max {
+                margin: 0 0 5px 0;
+            }
+        }
+        &_data-time {
+            @include _640_max {
+                margin: 0 0 15px 0;
+            }   
+        }
+    }
+    .row {
+        display: grid;   
+    }
+    .row-2 {
+        grid-gap: 5px;
+        @include _860_min {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+    }
+    .row-2-fixed {
+        @include _640_min {
+            grid-template-columns: repeat(2, 1fr);
+        }  
+    }
+    .row-3 {
+        grid-gap: 5px;        
+        @include _740_min {
+            grid-template-columns: repeat(2, 1fr);
+        }       
+        @include _860_min {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+ 
+
+.form-radio{
+    margin: 0 0 10px 0;
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked)
+    {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="radio"]:checked + label,
+    input[type="radio"]:not(:checked) + label {
+        display: inline-block;
+        position: relative;
+        color: #0C061A;
+        padding-left: 31px;
+        line-height: 16px;
+        cursor: pointer;
+        font-size: 0.875rem;
+    }
+    input[type="radio"]:checked + label:before,
+    input[type="radio"]:not(:checked) + label:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ebebeb;
+        background-color: #ffffff;
+    }
+
+    input[type="radio"]:checked + label:before,
+    input[type="radio"]:not(:checked) + label:before {
+        border-radius: 100%;
+    }
+    input[type="radio"]:checked + label:before {
+        border: 5px solid #E95D2A;
+    }
+
+    input[type="radio"]:disabled + label{
+        color: #cccc;
+        cursor: initial;
+    }
+
+}
+
+
+
+
+.form-checkbox{
+    input[type="checkbox"]:checked,
+    input[type="checkbox"]:not(:checked)
+    {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="checkbox"]:checked + label,
+    input[type="checkbox"]:not(:checked) + label {
+        display: inline-block;
+        position: relative;
+        color: #666666;
+        font-weight: 400;
+        padding-left: 28px;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked + label:before,
+    input[type="checkbox"]:not(:checked) + label:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-color: $bg-color;
+    }
+    input[type="checkbox"]:checked + label:before,
+    input[type="checkbox"]:not(:checked) + label:before {
+        border-radius: 2px;
+    }
+    input[type="checkbox"]:checked + label:after,
+    input[type="checkbox"]:not(:checked) + label:after {
+        content: '';
+        left: 3px;
+        top: 4px;
+        width: 10px;
+        height: 6px;
+        border-left: 2px solid #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+    input[type="checkbox"]:checked + label:before{
+        background: $orange;
+    }
+    input[type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+    }
+    input[type="checkbox"]:checked + label:after{
+        opacity: 1;
+    }
+}

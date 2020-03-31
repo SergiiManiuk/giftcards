@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>fox</title>
+    <meta charset="utf-8" />
+    <link rel="alternate" hreflang="uk" href="https://foxtrotgroup.com.ua/uk/" />
+    <link rel="alternate" hreflang="ru" href="https://foxtrotgroup.com.ua/" />
+    <link rel="alternate" hreflang="en" href="https://foxtrotgroup.com.ua/en/" />
+    <meta name="theme-color" content="#E95D2A">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1">
+    <link rel="icon" type="image/png" sizes="192x192" href="./src/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./src/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-16x16.png">
+     <link href="./dist/css/app.css" rel="stylesheet">
+</head>
+<body>
+ <header class="header">  
+    <div class="header__logo">
+        <a href="#">
+            <img src="./src/img/logo.png" alt="лого фокстрот груп">
+        </a>
+    </div>
+
+    <div class="header__menu stellarnav">
+        <a href="#" class="menu-toggle"><span></span></a>
+        <div class="navMainWrap">
+            <ul id="navMain" class="nav-main">
+                <li><a href="">Главная</a></li>
+                <li><a href="">О компании</a>
+                    <ul> 
+                        <li><a href="http://google.com">Кто мы</a>
+                        <li><a href="http://google.com">Миссия и ценности</a>
+                        <li><a href="#">Руководители</a>
+                            <ul>
+                                <li><a href="#">Deep</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://google.com">Топ менеджмент</a>
+                        <li><a href="#">Наши бренды</a>
+                            <ul>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </li>
+                <li><a href="">Пресс-центр</a></li>
+                <li><a href="">Карьера</a></li>
+                <li><a href="">КСО</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Тендеры</a></li>
+            </ul>
+            <span class="header__feedback">
+                <a href="/" class="">Связаться с нами</a>
+            </span>
+            <span class="header__lang">
+                <span class="language-dropdown">
+                    <a href="/" class="language-selector-label">RU</a>
+                    <ul class="language-list">
+                        <li>RU</li>
+                        <li>UA</li> 
+                        <li>EN</li>
+                    </ul>
+                </span>
+            </span>
+        </div>
+    </div>
+        <label for="search_mob" class="search-mob-label"><svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.838 16.394l-4.654-4.692a.52.52 0 01-.057-.654c1.908-2.93 1.463-6.957-1.352-9.363-2.71-2.314-6.833-2.235-9.457.176C-.695 4.63-.771 9.34 2.09 12.204c2.44 2.444 6.217 2.741 8.99.905a.517.517 0 01.657.057l4.644 4.682a.514.514 0 00.728.001l.727-.728c.2-.2.2-.525 0-.727zM3.544 10.75a5.112 5.112 0 010-7.214 5.093 5.093 0 017.203 0 5.112 5.112 0 010 7.213 5.093 5.093 0 01-7.203 0z" fill="#fff"/></svg></label>
+        <input type="checkbox" id="search_mob" class="search-mob" style="display:none;">
+
+     <div class="header__search">
+        <input type="text" class="header__search_input" placeholder="Поиск">
+        <input type="submit" class="header__search_submit">
+    </div>
+</header> 
+
+
+
+ 
+<section class="wrap">
+    <div class="breadcrumbs"> 
+
+      <ul class="desktop-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li>тендеры</li>
+      </ul>
+        
+        <ul class="mobile-menu" style="display:none">
+            <li>
+                <a href="">тендеры</a>
+            </li>
+
+        </ul>
+
+    </div>
+</section>
+
+
+<section class="wrap">
+    <div class="content">
+
+        <div class="sidebar">
+            <aside class="menu-sidebar">
+                <ul>
+                    <li><a href="" class="active">Открытые тендеры</a></li>
+                    <li><a href="">Закрытые тендеры</a></li>
+                    <li><a href="">Архив</a></li>
+                    <li><a href="">План закупок</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="primary">
+
+                <p class="heading icon-tender">
+                    <span class="no-bold">Открытые</span>
+                    <span>тендеры<span>
+                </p>
+                <ul class="categories">
+                    <li><a href="#" rel="4" class="">Услуги</a></li>
+                    <li><a href="#" rel="4" class="check">Товары</a></li>
+                    <li><a href="#" rel="4" class="">Работы</a></li>
+                </ul>
+                <!-- begin: article -->
+                <article class="article">
+                    <div class="article__thumbnail">
+                        <img src="./src/img/tender_img.png" alt="">
+                    </div>
+                    <div class="article__info">
+                        <div class="article__date">
+                            <span>24 октября 2019</span>
+                        </div>
+                        <div class="article__title">
+                            Подарочные пластиковые карты
+                        </div>
+                        <div class="article__description">
+                            Группа компаний "ФОКСТРОТ" приглашает Вас принять участие в процедуре закупки по предмету: Подарочные пластиковые карты
+                        </div>
+                        <div class="link-more">
+                            <a href="" class="link-more"><span>Читать дальше</span></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- end: article -->
+                <!-- begin: article -->
+                <article class="article">
+                    <div class="article__thumbnail">
+                        <img src="./src/img/tender_img.png" alt="">
+                    </div>
+                    <div class="article__info">
+                        <div class="article__date">
+                            <span>24 октября 2019</span>
+                        </div>
+                        <div class="article__title">
+                            Подарочные пластиковые карты
+                        </div>
+                        <div class="article__description">
+                            Группа компаний "ФОКСТРОТ" приглашает Вас принять участие в процедуре закупки по предмету: Подарочные пластиковые карты
+                        </div>
+                        <div class="link-more">
+                            <a href="" class="link-more"><span>Читать дальше</span></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- end: article -->
+
+            <div class="paginations">
+                <a href="" class="button-nav button-prev">Назад</a>
+                <ul>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">4</a></li>
+                </ul>
+                <a href="" class="button-nav button-next">Далее</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+
+<section class="subscribe">
+    <div class="wrap">
+        <div class="wrap-subscribe">
+            <div class="wrap-subscribe__slogan">
+                <p class="heading icon-subscribe"><span class="no-bold">У нас есть рассылка тендерных предложений</span></p>
+            </div>
+            <div class="wrap-subscribe__submit">
+                <a href="" class="btn">Подписаться на рассылку</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contacts">
+    <div class="wrap">
+        <p class="heading icon-contacts"><span class="no-bold">Наши</span><span class="bold">контакты</span></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="contacts-map">
+            <div class="contacts-map__info">
+                <p class="contacts-map__info_heading underline">
+                    <span class="no-bold">Ответим на любой</span><br>
+                    <span class="bold">ваш вопрос</span>
+                </p>
+                <div class="contacts-map__data">
+                    <div class="contacts-map__data_row">
+                        <div class="contacts-icon">
+                            <img src="./dist/svg/sprite.svg#phone" alt="">
+                        </div>
+                        <div class="contacts-details">
+                            <label class="contacts-details__label">Справочная служба:</label>
+                            <span class="contacts-details__info"><a href="tel:0800300353">0 800 300 353</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contacts-map__data_row">
+                        <div class="contacts-icon">
+                            <img src="./dist/svg/sprite.svg#address" alt="">
+                        </div>
+                         <div class="contacts-details">
+                            <label class="contacts-details__label">Адрес:</label>
+                            <span class="contacts-details__info">
+                                г. Киев, ул. Дорогожицкая, 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contacts-map__data_row">
+                        <div class="contacts-icon">
+                            <img src="./dist/svg/sprite.svg#mail" alt="">
+                        </div>
+                        <div class="contacts-details">
+                            <label class="contacts-details__label">Электронная почта:</label>
+                            <span class="contacts-details__info">
+                                <a href="mailto:quality@foxtrot.com.ua">quality@foxtrot.com.ua</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-map__screen">
+                <img src="./src/img/map.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+ <footer>
+    <div class="wrap">
+        <div class="footer-block">
+            <div class="footer-column">
+                <p>Информация</p>
+                <ul>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li><a href="">Menu Three</a></li>
+                    <li><a href="">Menu Four</a></li>
+                </ul>
+            </div><!-- column -->
+            <div class="footer-column">
+                <p>Компания</p>
+                <ul>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li><a href="">Menu Three</a></li>
+                    <li><a href="">Menu Four</a></li>
+                </ul>
+            </div><!-- column -->
+            <div class="footer-column">
+                <p>Собственники</p>
+                <ul>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Возврат товара</a></li>
+                </ul>
+            </div><!-- column -->
+            <div class="footer-column">
+                <p>Контакты</p>
+                 <ul>
+                    <li>Пн-Пт: 08:30 - 21:00</li>
+                    <li>Сб-Вс: 08:30 - 21:00</li>
+                    <li><a href="">Обратный звонок</a></li>
+                    <li><a href="">Написать нам</a></li>
+                    <li><a href="">Наши магазины</a></li>
+                </ul>
+                <ul class="footer-icons-social">
+                    <li><a href="" class="icon-footer icon-facebook"></a></li>
+                    <li><a href="" class="icon-footer icon-twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="wrap">
+            <p>© 1823 — 2019</p>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="./dist/js/app.min.js"></script>
+</html>
