@@ -89,6 +89,7 @@
       -webkit-overflow-scrolling: touch;
       overflow: -moz-scrollbars-none;
       scrollbar-width: none;
+
  
     @include desktop_max_height {
       padding: 15px 60px 0;
@@ -98,6 +99,25 @@
     } 
     @include _640_max {
       padding: 15px 15px 0;
+    }
+          &_thanks {
+       justify-content: center;
+    padding-bottom: 50px;
+    align-items: center;
+    display: flex;
+      padding: 20px 50px;
+      @include _860_max {
+            padding: 20px 15px;
+      }
+    .order-list {
+    border: none !important;
+    @include _860_max {
+        margin: 0;
+    padding: 0;
+    } 
+
+
+      }
     }
 
   }
@@ -249,6 +269,7 @@
     padding: 0px 0 10px 0;
     margin: 0 0 20px 0;
     border-bottom: 1px solid #cccccc;
+        max-width: 420px;
     li {
       display: grid;
 grid-auto-flow: column;

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>giftcards</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1">
+        <link href="./dist/css/app.css" rel="stylesheet">
+    </head>
+    <body>
+
+         <div class="popup-overlay">
+
+
+        <div class="popup">
+            <div class="popup__head">
+                <p>Подарочный сертификат Фокстрот</p>
+                <i class="btn-close"></i>
+            </div>
+            <div class="popup__content">
+                <div class="progress-bar">
+                    <div class="progress-bar__step">
+                        <div class="progress-bar__step_slogan">Доставка и номинал</div>
+                        <div class="progress-bar__step_filling"></div>
+                    </div>
+                    <div class="progress-bar__step active">
+                        <div class="progress-bar__step_slogan">Контактная информация</div>
+                        <div class="progress-bar__step_filling"></div>
+                    </div>
+                    <div class="progress-bar__step">
+                        <div class="progress-bar__step_slogan">Выбор открытки</div>
+                        <div class="progress-bar__step_filling"></div>
+                    </div>
+                    <div class="progress-bar__step">
+                        <div class="progress-bar__step_slogan">Оплата</div>
+                        <div class="progress-bar__step_filling"></div>
+                    </div>
+                </div>
+                <div class="popup__info">
+                    <div class="form">
+                        <div class="form__row_block">
+                            <p class="form__legend">Детали заказа</p>                            
+                            <div class="row row-2">
+                                <div class="col">
+                                    <input type="text" placeholder="Номер телефона">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="ФИО">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__row_block form__row_data-time">
+
+                            <div class="row-data-time">
+
+                                <div class="data-col">
+                                   <label>Дата</label>
+                                    <input type="text" placeholder="31/10/1983" class="input-date" data-toggle="datepicker">
+                                </div>
+
+                                <div class="time-col">
+                                   <label>Время</label>
+                            
+                                    <ul class="time-choose">
+                                       <li>9:00 - 21:00</li>
+                                       <li class="active">15:00 - 18:00</li>
+                                       <li>12:00 - 15:00</li>
+                                       <li>18:00 - 21:00</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+                     <div class="form__row_block">
+                            <p class="form__legend">Данные получателя  (вар.2)
+                                <span class="form-checkbox">
+                                        <input type="checkbox" id="delivery-fox-save-address" checked="">
+                                        <label for="delivery-fox-save-address">
+                                            Сохранить адрес
+                                        </label>
+                                    </span>
+                                </p>
+                            <div class="row row-3">
+                                <div class="col">
+                                    <input type="text" placeholder="Номер телефона">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="ФИО">
+                                </div>
+                                <div class="col">
+                                  <select name="" id="">
+                                    <option value="" disabled selected>Город</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Улица">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Дом">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Квартира">
+                                </div>
+                            </div>
+                        </div> 
+                         <!--<div class="form__row_block">
+                            <p class="form__legend">Данные получателя (вар.3)
+                                <span class="form-checkbox">
+                                        <input type="checkbox" id="delivery-fox-save-address" checked="">
+                                        <label for="delivery-fox-save-address">
+                                            Сохранить адрес
+                                        </label>
+                                    </span>
+                            </p>
+                            <div class="row row-2">
+                                <div class="col">
+                                    <input type="text" placeholder="Номер телефона">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="ФИО">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>                    
+                </div>
+            </div>
+            <div class="popup__footer">
+                <div class="container-buttons">
+                    <a href="/" class="btn btn-purple">Назад</a>
+                    <a href="/" class="btn">Вперед</a>
+                </div>
+                <div class="copyright">
+                    Продаж здійснює ТОВ «Гіфт Кард Мол» Тел.: 044 599 38 10, 067 468 10 90 Email: info@giftmall.com.ua
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src="./dist/js/app.min.js"></script> 
+    </body>
+</html>

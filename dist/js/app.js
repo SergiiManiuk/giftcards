@@ -4592,7 +4592,7 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 
 $(document).ready(function(){
 
-   $('select').select2({
+   $('selec').select2({
         width: '100%',
         minimumResultsForSearch: -1
    });

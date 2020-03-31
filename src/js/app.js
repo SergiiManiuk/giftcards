@@ -16,7 +16,7 @@
 
 $(document).ready(function(){
 
-   $('select').select2({
+   $('selec').select2({
         width: '100%',
         minimumResultsForSearch: -1
    });

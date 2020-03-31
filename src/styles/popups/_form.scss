@@ -41,6 +41,7 @@ $main-wrap: 1440px;
     }
 
     &__row {
+
         &_block {
             margin: 0 0 15px 0;
             @include _640_max {
@@ -54,7 +55,11 @@ $main-wrap: 1440px;
         }
     }
     .row {
-        display: grid;   
+        display: grid; 
+             .col {
+        position: relative;
+                
+            }  
     }
     .row-2 {
         grid-gap: 5px;
